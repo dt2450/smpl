@@ -1,13 +1,14 @@
-References: http://www.cs.columbia.edu/~sedwards/classes/2013/w4115-fall/reports/SMPL.pdf
+# SMPL - Simple Parallel Language
 
-You can find the complete project details with slides and report at the link:
-http://www.cs.columbia.edu/~sedwards/classes/2013/w4115-fall/index.html
-Just look for SMPL on that web-page.
+Ajay S S Reddy Challa, Andrei Papancea, Devashi Tandon
+{ac3647, alp2200, dt2450} @columbia.edu
+
+December 20, 2013
 
 Here is a brief overview:
 
-Tutorial
-2.1 A “Simple” Example
+#Tutorial
+#2.1 A “Simple” Example
 
 Here is a quick “Hello world!” program in SMPL:
 
@@ -40,8 +41,8 @@ possible to predict which of the three threads will finish first. The barrier st
 A few last things to notice before we move on are: void type is optional for function
 definitions, which is why the say function does not have a type, and string is a type that does
 not exist in C, so we implemented it in SMPL for simplicity — see what we did there?
-6
-2.2 Compiling and Running SMPL Programs
+
+# 2.2 Compiling and Running SMPL Programs
 First, SMPL programs use .smpl as an extension, by convention. You have multiple options of
 interacting with the compiler (smplc) by using the following command line arguments:
 
@@ -61,7 +62,7 @@ Finally, to finish the compilation of your “Hello world” program run gcc -pt
 hello.c. Note that trying to compile the program without the -pthread flag will fail,
 because the C output of SMPL uses the Posix Threads library to run programs in parallel.
 
-2.3 “THE” Example
+# 2.3 “THE” Example
 Here is a quick introduction to the four keywords that SMPL uses to perform parallelism:
 1. spawn: tells the compiler that the function that spawn precedes should run in parallel
 with the caller thread.
@@ -102,3 +103,9 @@ performance)
 Both programs ran on the CLIC machines using the same compiler and includes. In conclusion,
 with very limited effort you can turn a serial C program into a parallel one. In this case, the
 SMPL program ran more than twice as fast than its C counterpart.
+
+# References: http://www.cs.columbia.edu/~sedwards/classes/2013/w4115-fall/reports/SMPL.pdf
+
+PS: You can find the complete project details with slides and report at the link:
+http://www.cs.columbia.edu/~sedwards/classes/2013/w4115-fall/index.html
+Just look for SMPL on that web-page.
