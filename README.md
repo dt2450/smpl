@@ -7,8 +7,9 @@ December 20, 2013
 
 Here is a brief overview:
 
-#Tutorial
-#2.1 A “Simple” Example
+# Tutorial
+
+# 2.1 A “Simple” Example
 
 Here is a quick “Hello world!” program in SMPL:
 
@@ -104,7 +105,9 @@ Both programs ran on the CLIC machines using the same compiler and includes. In 
 with very limited effort you can turn a serial C program into a parallel one. In this case, the
 SMPL program ran more than twice as fast than its C counterpart.
 
-# References: http://www.cs.columbia.edu/~sedwards/classes/2013/w4115-fall/reports/SMPL.pdf
+# References: 
+
+http://www.cs.columbia.edu/~sedwards/classes/2013/w4115-fall/reports/SMPL.pdf
 
 PS: You can find the complete project details with slides and report at the link:
 http://www.cs.columbia.edu/~sedwards/classes/2013/w4115-fall/index.html
