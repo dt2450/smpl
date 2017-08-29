@@ -1,3 +1,11 @@
+References: http://www.cs.columbia.edu/~sedwards/classes/2013/w4115-fall/reports/SMPL.pdf
+
+You can find the complete project details with slides and report at the link:
+http://www.cs.columbia.edu/~sedwards/classes/2013/w4115-fall/index.html
+Just look for SMPL on that web-page.
+
+Here is a brief overview:
+
 Tutorial
 2.1 A “Simple” Example
 
